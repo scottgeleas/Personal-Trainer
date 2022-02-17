@@ -1,18 +1,38 @@
 import React from 'react';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './style.css'
+
 export default function Header() {
     return (
-        <Navbar bg="light" expand="lg">
-            <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <Link to="/"class="navbar-brand">
+                Navbar
+            </Link>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item navColor">
+                        <Link to="/" class="nav-link">
+                            About
+                        </Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link to="/contact" class="nav-link">
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
+            </section>
+        </nav>
     );
 }

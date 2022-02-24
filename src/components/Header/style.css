@@ -1,3 +1,8 @@
-.navColor {
-    background-color: aqua;
+#navbar {
+    background-color: var(--main);
+}
+
+
+#navigation {
+    margin: 10px 40px;
 }

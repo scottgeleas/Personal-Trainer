@@ -1,38 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './style.css'
+// import { Link } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import './style.css';
 
 export default function Header() {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <Link to="/"class="navbar-brand">
-                Navbar
-            </Link>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <section class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item navColor">
-                        <Link to="/" class="nav-link">
-                            About
-                        </Link>
-                    </li>
-                    <li class="nav-item">
-                        <Link to="/contact" class="nav-link">
-                            Contact
-                        </Link>
-                    </li>
-                </ul>
-            </section>
-        </nav>
+        <Navbar expand="lg" id='navbar'>
+            <Container fluid id="navigation">
+                <LinkContainer to="/">
+                    <Navbar.Brand>Dylan Clifford</Navbar.Brand>
+                </LinkContainer>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="ms-auto">
+                        <LinkContainer to="/">
+                            <Nav.Link>About</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to="/contact">
+                            <Nav.Link>Contact</Nav.Link>
+                        </LinkContainer>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 }

@@ -1,0 +1,47 @@
+#navbar {
+    background-color: var(--main);
+    filter: drop-shadow(0px 3px 5px #000000);
+    /* margin: 1% 0; */
+}
+
+#navigation {
+    padding: 0;
+    vertical-align: middle;
+}
+
+/* #brand {
+    min-width: max-content;
+}  */
+
+
+#logo {
+    margin-left: 4vw;
+    /* margin-right: 2vw; */
+    /* padding-right: 4vw; */
+    max-height: 12vw;
+    width: auto;
+    vertical-align: middle;
+
+}
+
+#brand-name {
+    /* text-align: center; */
+     margin-right: 3vw;
+     padding-bottom: 15px;
+    font-size: 5vw;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#collapse {
+    margin-right: 4vw;
+}
+
+nav {
+    padding-right: 4vw;
+}
+
+.nav-link {
+    /* margin-right: 55px; */
+    font-size: 2vw;
+}

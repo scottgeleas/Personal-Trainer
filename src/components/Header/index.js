@@ -1,25 +1,33 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import './style.css';
+import { Navbar, Nav, Container, Image} from 'react-bootstrap';
+import Stack from 'react-bootstrap/Stack'
+import './index.css';
+import dumbbell from '../../images/dumbbell.png';
 
 export default function Header() {
     return (
-        <Navbar expand="lg" id='navbar'>
+        <Navbar expand="xl" id="navbar">
             <Container fluid id="navigation">
+                        <Image id="logo" src={dumbbell} />
                 <LinkContainer to="/">
-                    <Navbar.Brand>Dylan Clifford</Navbar.Brand>
+                    {/* <Container id="brand"> */}
+                        <Navbar.Brand id="brand-name">
+                            Dylan Clifford
+                        </Navbar.Brand>
+                    {/* </Container> */}
                 </LinkContainer>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle id='collapse' aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <LinkContainer to="/">
+                    <Stack direction="horizontal" gap={5}>
+                        <LinkContainer to="/" className="nav-link">
                             <Nav.Link>About</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/contact">
+                        <LinkContainer to="/contact" className="nav-link">
                             <Nav.Link>Contact</Nav.Link>
                         </LinkContainer>
+                        </Stack>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

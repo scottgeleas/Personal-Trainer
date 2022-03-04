@@ -1,15 +1,33 @@
 import React from 'react';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
+import { Navbar, Nav, Container, Image} from 'react-bootstrap';
+import Stack from 'react-bootstrap/Stack'
+import './index.css';
+import dumbbell from '../../images/dumbbell.png';
+
 export default function Header() {
     return (
-        <Navbar bg="light" expand="lg">
-            <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar expand="xl" id="navbar">
+            <Container fluid id="navigation">
+                        <Image id="logo" src={dumbbell} />
+                <LinkContainer to="/">
+                    {/* <Container id="brand"> */}
+                        <Navbar.Brand id="brand-name">
+                            Dylan Clifford
+                        </Navbar.Brand>
+                    {/* </Container> */}
+                </LinkContainer>
+                <Navbar.Toggle id='collapse' aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
+                    <Nav className="ms-auto">
+                    <Stack direction="horizontal" gap={5}>
+                        <LinkContainer to="/" className="nav-link">
+                            <Nav.Link>About</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to="/contact" className="nav-link">
+                            <Nav.Link>Contact</Nav.Link>
+                        </LinkContainer>
+                        </Stack>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

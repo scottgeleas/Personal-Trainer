@@ -6,30 +6,40 @@
 
 #navigation {
     padding: 0;
+    display: flex;
+    align-items: center;
     /* vertical-align: middle; */
 }
 
-/* #brand {
-    min-width: max-content;
-}  */
-
+#brand {
+  display: flex;
+  align-items: center;
+  width: min-content;
+      /* vertical-align: middle; */
+} 
 
 #logo {
     margin-left: 4vw;
-    /* margin-right: 2vw; */
-    /* padding-right: 4vw; */
-    max-height: 12vw;
+    margin-right: 0;
+    padding-right: 4vw;
+    max-height: 180px;
     width: auto;
-    vertical-align: middle;
-
+    /* vertical-align: middle; */
 }
 
 #brand-name {
     /* text-align: center; */
-     margin-right: 3vw;
-     padding-bottom: 15px;
-    font-size: 5vw;
-    vertical-align: middle;
+    /* display: flex; */
+
+    /* align-items: center; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    margin-right: 3vw;
+    /* padding-bottom: 15px; */
+    font-size: 500%;
+    width: min-content;
     cursor: pointer;
 }
 

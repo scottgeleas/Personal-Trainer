@@ -9,13 +9,13 @@ export default function Header() {
     return (
         <Navbar expand="xl" id="navbar">
             <Container fluid id="navigation">
-                        <Image id="logo" src={dumbbell} />
                 <LinkContainer to="/">
-                    {/* <Container id="brand"> */}
+                    <Container id="brand">
+                        <Image id="logo" src={dumbbell} />
                         <Navbar.Brand id="brand-name">
-                            Dylan Clifford
+                            ooooooooooooooooo
                         </Navbar.Brand>
-                    {/* </Container> */}
+                    </Container>
                 </LinkContainer>
                 <Navbar.Toggle id='collapse' aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

@@ -21,7 +21,7 @@
     text-decoration: none;
 }
 
-.links {
+.contact {
     padding: 0;
 }
 
@@ -33,12 +33,5 @@
 #certification {
     display: block;
     height: 50px;
-    width: 390px;
-}
-
-@media (max-width: 576px) {
-    img {
-        height: 40px;
-        padding-bottom: 4px;
-    }
+    width: auto;
 }

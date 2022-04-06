@@ -28,7 +28,11 @@ export default function Footer() {
 
                 <Row>
                     <Col className='links'>
-                        <img src={issa} alt='issa-certification'></img>
+                        <img
+                            id='certification'
+                            src={issa}
+                            alt='issa-certification'
+                        ></img>
                     </Col>
                 </Row>
             </Container>

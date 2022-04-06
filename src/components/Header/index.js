@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <Navbar id="navbar" expand="lg">
             <Col className="col">
-                <Image id="logo" className="align-top m-auto" src={dumbbell} />
+                <Image id="logo" className="m-auto" src={dumbbell} />
             </Col>
             <Col className="col">
                 <LinkContainer to="/">

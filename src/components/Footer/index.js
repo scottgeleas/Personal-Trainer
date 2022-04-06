@@ -10,10 +10,10 @@ export default function Footer() {
         <footer>
             <Container fluid id="footer">
                 <Row>
-                    <Col xxl={8} className="contact">
-                        <Container>
+                    <Col id='col'>
+                        <Container id='information'>
                         <h3>Questions? Or want to book a free consultation?</h3>
-                        <p id='num'>
+                        <p>
                             {/* Call me at (505)-555-5555 or send me an emal through
                             the <a>Contact</a> page and I will get back to you
                             as soon as possible. */}
@@ -27,7 +27,7 @@ export default function Footer() {
                  {/* <div className='vl'></div> */}
                  
                 <Row>
-                    <Col xxl={4} className="links">
+                    <Col  className="links">
                         <img src={issa} alt='issa-certification'></img>
                     </Col>
                 </Row>

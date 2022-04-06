@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './style.css';
+import './index.css';
 import issa from '../../images/trainer-certification.png';
 
 export default function Footer() {
@@ -27,7 +27,7 @@ export default function Footer() {
                 </Row>
 
                 <Row>
-                    <Col className='links'>
+                    <Col className='contact'>
                         <img
                             id='certification'
                             src={issa}

@@ -1,57 +1,23 @@
 #navbar {
     background-color: var(--main);
     filter: drop-shadow(0px 3px 5px #000000);
-    /* margin: 1% 0; */
+    padding: 20 0;
 }
 
-#navigation {
-    padding: 0;
+.col {
     display: flex;
-    align-items: center;
-    /* vertical-align: middle; */
+    justify-content: center;
 }
-
-#brand {
-  display: flex;
-  align-items: center;
-  width: min-content;
-      /* vertical-align: middle; */
-} 
 
 #logo {
-    margin-left: 4vw;
-    margin-right: 0;
-    padding-right: 4vw;
-    max-height: 180px;
-    width: auto;
-    /* vertical-align: middle; */
+    max-height: 10vw;
 }
 
 #brand-name {
-    /* text-align: center; */
-    /* display: flex; */
-
-    /* align-items: center; */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    margin-right: 3vw;
-    /* padding-bottom: 15px; */
-    font-size: 500%;
-    width: min-content;
+    font-size: 6vw;
     cursor: pointer;
 }
 
-#collapse {
-    margin-right: 4vw;
-}
-
-nav {
-    padding-right: 4vw;
-}
-
 .nav-link {
-    /* margin-right: 55px; */
-    font-size: 2vw;
+    font-size: 20pt;
 }

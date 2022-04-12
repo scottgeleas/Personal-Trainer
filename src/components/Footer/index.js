@@ -7,32 +7,26 @@ import issa from '../../images/trainer-certification.png';
 export default function Footer() {
     return (
         <footer>
-            <Container fluid id='footer'>
+            <Container fluid id="footer">
                 <Row>
-                    <Col id='col'>
-                        <Container id='information'>
+                    <Col xs={12}>
+                        <Container id="contact">
                             <h3>
-                                Questions? Or want to book a free consultation?
+                                Questions? Or want to book a{' '}
+                                <span>free consultation?</span>
                             </h3>
                             <p>
-                                Send me an email through the{' '}
-                                <Link to='/contact'>contact</Link> page or call
+                                Send an email through the{' '}
+                                <Link to="/contact">contact</Link> page or call
                                 me at{' '}
-                                <a id='phone' href='tel:+1-603-425-9064'>
+                                <a id="phone" href="tel:+1-603-425-9064">
                                     (603)-425-9064
                                 </a>
                             </p>
                         </Container>
                     </Col>
-                </Row>
-
-                <Row>
-                    <Col className='contact'>
-                        <img
-                            id='certification'
-                            src={issa}
-                            alt='issa-certification'
-                        ></img>
+                    <Col id="certification">
+                        <img src={issa} alt="issa-certification"></img>
                     </Col>
                 </Row>
             </Container>

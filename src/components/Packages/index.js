@@ -5,8 +5,10 @@ import './index.css';
 
 export default function Packages() {
     return (
-        <Card>
-        <Card.Header>Header</Card.Header>
+        <Card
+        style={{ width: '18rem' }}
+        className="mb-2">
+        <Card.Header>Package #1</Card.Header>
         <Card.Body>
           <Card.Title>Card Title </Card.Title>
           <Card.Text>

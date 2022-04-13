@@ -1,17 +1,17 @@
 #navbar {
     background-color: var(--main);
     filter: drop-shadow(0px 3px 5px #000000);
-    padding: 20 0;
+    padding: 0 25px;
 }
 
-.col {
-    display: flex;
-    justify-content: center;
+div {
+    border: 1px solid red;
 }
 
 #logo {
     height: 10vw;
 }
+
 
 #brand-name {
     font-size: 6vw;
@@ -20,4 +20,5 @@
 
 .nav-link {
     font-size: 20pt;
+    text-align: center;
 }

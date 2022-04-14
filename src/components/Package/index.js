@@ -1,43 +1,20 @@
 import React from "react";
-import { Card, Row, Col } from 'react-bootstrap';
-import './index.css';
+import { Card } from 'react-bootstrap';
+import './styles.css';
 
 
-export default function Packages() {
+export default function Package({ packageInfo }) {
     return (
-        
-            <Row>
-                <Col>
-                    <Card
-                        style={{ width: '18rem' }}
-                        className="mb-2">
 
-                        <Card.Header>Package #1</Card.Header>
-                        <Card.Body>
-                            <Card.Title>Card Title </Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk
-                                of the card's content.
-                            </Card.Text>
-                        </Card.Body>
+        <Card>
+            <Card.Title>{packageInfo.title}</Card.Title>
+            <Card.Subtitle>{packageInfo.rate}</Card.Subtitle>
+            <Card.Body>
+                <Card.Text>{packageInfo.description}</Card.Text>
+            </Card.Body>
+        </Card>
 
 
-
-
-                        <Card.Header>Package #2</Card.Header>
-                        <Card.Body>
-                            <Card.Title>Card Title </Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk
-                                of the card's content.
-                            </Card.Text>
-                        </Card.Body>
-
-                    </Card>
-                </Col>
-
-            </Row>
-        
 
     );
 }

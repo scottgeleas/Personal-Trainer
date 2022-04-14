@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './index.css';
+import { Container, Row, Col } from 'react-bootstrap';
+import './style.css';
 import issa from '../../images/trainer-certification.png';
 
 export default function Footer() {
@@ -17,7 +17,7 @@ export default function Footer() {
                             </h3>
                             <p>
                                 Send an email through the{' '}
-                                <Link to="/contact">contact</Link> page or call
+                                <Link to="/contact">contact</Link> form or call
                                 me at{' '}
                                 <a id="phone" href="tel:+1-603-425-9064">
                                     (603)-425-9064

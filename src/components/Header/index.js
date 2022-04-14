@@ -20,7 +20,7 @@ export default function Header() {
                 </Col>
                 <Col>
                     <Nav>
-                        <LinkContainer to="#contact" id="nav-link">
+                        <LinkContainer to="/contact" id="nav-link">
                             <Nav.Link>Contact</Nav.Link>
                         </LinkContainer>
                     </Nav>

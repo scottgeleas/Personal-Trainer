@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row, Col } from 'react-bootstrap'
 import './style.css'
 import Header from '../../components/Header'
 import Package from '../../components/Package'
@@ -22,9 +23,15 @@ export default function Home() {
     return (
         <div>
             <Header />
-            <h1>Home</h1>
-            <Package packageInfo={packages.package1} />
-            <Package packageInfo={packages.package2} />
+            <Row id='packages'>
+                <Col className='package-container'>
+                    <Package packageInfo={packages.package1} />
+                </Col>
+
+                <Col className='package-container'>
+                    <Package packageInfo={packages.package2} />
+                </Col>
+            </Row>
             <Footer />
         </div>
     );

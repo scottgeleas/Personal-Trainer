@@ -5,9 +5,9 @@ import './styles.css';
 
 export default function Package({ packageInfo }) {
     return (
-        <Container>
+        
 
-            <Card style={{ width: "18rem" }}>
+            <Card>
                 <Card.Title>{packageInfo.title}</Card.Title>
                 <Card.Subtitle>{packageInfo.rate}</Card.Subtitle>
                 <Card.Body>
@@ -15,7 +15,7 @@ export default function Package({ packageInfo }) {
                 </Card.Body>
             </Card>
 
-        </Container>
+        
 
     );
 }

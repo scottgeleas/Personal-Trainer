@@ -2,7 +2,7 @@
     position: relative;
     bottom: 0;
     width: 100%;
-    border-top: 3px solid green;
+    border-top: 3px solid var(--main);
     padding: 20px;
 }
 

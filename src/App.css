@@ -1,1 +1,4 @@
-/* Do we even need this file? */
+html {
+    position: relative;
+    min-height: 100%;
+}

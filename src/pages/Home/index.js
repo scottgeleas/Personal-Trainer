@@ -9,14 +9,19 @@ export default function Home() {
     const packages = {
 
         package1: {
-            title: 'title1',
+            title: 'Package 1',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
             rate: 30
         },
         package2: {
-            title: 'title2',
+            title: 'Package 2',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
             rate: 35
+        },
+        package3: {
+            title: 'Package 3',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+            rate: 40
         }
     }
 
@@ -30,6 +35,10 @@ export default function Home() {
 
                 <Col className='package-container'>
                     <Package packageInfo={packages.package2} />
+                </Col>
+
+                <Col className='package-container'>
+                    <Package packageInfo={packages.package3} />
                 </Col>
             </Row>
             <Footer />

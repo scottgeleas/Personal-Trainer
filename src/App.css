@@ -1,4 +1,6 @@
 html {
-    position: relative;
     min-height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }

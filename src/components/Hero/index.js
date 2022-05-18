@@ -1,39 +1,19 @@
 import React from 'react';
 import About from '../About'
+import Avatar from '../Avatar'
+import Skills from '../Skills'
 
 
 export default function Hero() {
     return (
         <div>
-        <h1>hello</h1>
-        <About/>
+            <Avatar />
+            <section>
+                <About />
+                <Skills />
+            </section>
         </div>
     );
 }
 
 
-/* 
-Home 
-    -Header
-    -Hero
-        -profilepic
-        -about
-        -skills
-    -Package
-    -Package
-    -Package
-    -Footer
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/

@@ -1,0 +1,24 @@
+.aboutsection {
+    position: relative;
+    right: 0;
+    float: right;
+}
+
+
+
+.header {
+    margin-left: 30rem;
+}
+
+.aboutinfo {
+    text-align: center;
+    border: 3px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 25px;
+    position: relative;
+    
+    width: 1000px;
+    height: 200px;
+
+}

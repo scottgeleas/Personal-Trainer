@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap'
 import './style.css'
 import Header from '../../components/Header'
+import Hero from '../../components/Hero'
 import Package from '../../components/Package'
 import Footer from '../../components/Footer'
 
@@ -28,6 +29,7 @@ export default function Home() {
     return (
         <div>
             <Header />
+            <Hero/>
             <Row id='packages'>
                 <Col className='package-container'>
                     <Package packageInfo={packages.package1} />

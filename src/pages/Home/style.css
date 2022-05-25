@@ -1,8 +1,10 @@
+#packages {
+    margin: 30px;
+    
+}
+
+
 .package-container {
     display: flex;
     justify-content: center;
-}
-
-#packages {
-    margin: 30px;
 }

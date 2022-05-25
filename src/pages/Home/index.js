@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import Header from '../../components/Header';
+import Hero from '../../components/Hero'
 import Package from '../../components/Package';
 import Footer from '../../components/Footer';
 import './style.css';

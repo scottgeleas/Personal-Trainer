@@ -1,8 +1,8 @@
 import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, Image, Col } from 'react-bootstrap';
-import './style.css';
 import dumbbell from '../../images/dumbbell.png';
+import './style.css';
 
 export default function Header() {
     return (

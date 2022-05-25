@@ -30,14 +30,9 @@ export default function Home() {
     return (
         <div>
             <Header />
-<<<<<<< HEAD
             <Hero/>
             <Row id='packages'>
                 <Col className='package-container'>
-=======
-            <Row id="packages">
-                <Col className="package-container">
->>>>>>> 68602db68f92b289104ec0ba9760c8ee8e1044b2
                     <Package packageInfo={packages.package1} />
                 </Col>
 

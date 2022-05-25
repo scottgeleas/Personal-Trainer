@@ -7,7 +7,7 @@ import './style.css';
 export default function Header() {
     return (
         <header>
-            <Navbar id="navbar">
+            <Navbar id="navbar" expand="lg" collapseOnSelect>
                 <Col>
                     <Image id="logo" src={dumbbell} />
                 </Col>
@@ -19,6 +19,13 @@ export default function Header() {
                     </LinkContainer>
                 </Col>
                 <Col>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="me-auto">
+                            <Nav.Link href="#features">Features</Nav.Link>
+                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
                     <Nav>
                         <LinkContainer to="/contact" id="nav-link">
                             <Nav.Link>Contact</Nav.Link>

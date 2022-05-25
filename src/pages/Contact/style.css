@@ -1,5 +1,6 @@
-.row {
-    width: 100%;
+#contact-container {
+    margin: 0;
+    padding-top: 20px;
 }
 
 .column {

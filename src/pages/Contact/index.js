@@ -10,7 +10,7 @@ export default function Contact() {
     return (
         <>
             <Header />
-            <Row>
+            <Row id="contact-container">
                 <Col id="examples" className="column" sm={12} lg={6}>
                     <ListGroup id="examples-list" as="ul" variant="flush">
                         <ListGroup.Item as="li" id="list-heading">

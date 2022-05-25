@@ -1,0 +1,11 @@
+#hero-container {
+    margin: 0;
+    margin-top: 30px;
+
+}
+
+#avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

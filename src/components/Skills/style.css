@@ -1,18 +1,9 @@
-.skillsection {
-    position: relative;
-    
+.skill-header {
+    text-align: center;
 }
 
 
-
-.skillinfo {
-    text-align: center;
-    border: 3px;
-    border-style: solid;
-    border-color: red;
-    border-radius: 25px;
-    position: relative;
-    
-    width: 1000px;
-    height: 200px;
+.skill-info {
+    border: 3px solid red;
+    border-radius: 10px;
 }

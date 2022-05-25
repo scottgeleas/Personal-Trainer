@@ -1,9 +1,9 @@
-.skill-header {
+#skill-header {
     text-align: center;
 }
 
 
-.skill-info {
+#skill-info {
     border: 3px solid red;
     border-radius: 10px;
 }

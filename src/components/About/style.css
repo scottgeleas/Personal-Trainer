@@ -1,8 +1,8 @@
-.about-header {
+#about-header {
     text-align: center;
 }
 
-.about-info {
+#about-info {
     border: 3px solid red;
     border-radius: 10px;
 }

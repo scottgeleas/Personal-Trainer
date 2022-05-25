@@ -1,17 +1,3 @@
-
-
-
-
-/* BUG HERE */
-.row {
-    /* width: 100%; */
-    /* display: flex; */
-}
-/* BUG HERE */
-
-
-
-
 .column {
     display: flex;
     justify-content: center;

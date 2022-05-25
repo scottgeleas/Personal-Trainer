@@ -4,3 +4,7 @@ html {
     justify-content: center;
     position: relative;
 }
+
+body {
+    width: 100%;
+}

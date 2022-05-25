@@ -1,10 +1,10 @@
 import React from 'react';
-import './style.css';
 import Header from '../../components/Header';
 import ContactForm from '../../components/ContactForm';
 import Footer from '../../components/Footer';
 import { Row, Col, Image, ListGroup } from 'react-bootstrap';
 import issa_logo from '../../images/issa-logo.png';
+import './style.css';
 
 export default function Contact() {
     return (

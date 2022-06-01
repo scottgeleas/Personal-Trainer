@@ -5,25 +5,42 @@
     border-radius: 0 0 10px 10px;
 }
 
-.col {
-    display: flex;
-    justify-content: center;
-}
-
 #logo {
-    height: 6vw;
+    height: 8vw;
 }
 
 #brand-name {
-    font-size: 3vw;
+    font-size: 5vw;
     margin: 0;
     padding: 0;
+    padding-left: 30px;
     cursor: pointer;
     color: white;
 }
 
 #nav-link {
+    text-align: right;
     font-size: 1.5vw;
     padding: 0;
     color: white;
 }
+
+@media screen and (max-width: 992px) {
+    .burger {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #nav-link {
+       padding-top: 15px;
+       padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 991px) {
+    #brand-name {
+    padding: 0;
+    }
+
+
+}
+

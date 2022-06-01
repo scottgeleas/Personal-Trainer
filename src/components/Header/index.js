@@ -18,10 +18,10 @@ export default function Header() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto burger">
-                        <LinkContainer to="/" id="nav-link">
+                        <LinkContainer to="/" className="nav-link">
                             <Nav.Link><Button>Home</Button></Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/contact" id="nav-link">
+                        <LinkContainer to="/contact" className="nav-link">
                             <Nav.Link><Button>Contact</Button></Nav.Link>
                         </LinkContainer>
                         </Nav>

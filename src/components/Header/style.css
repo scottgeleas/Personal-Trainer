@@ -1,7 +1,8 @@
 #navbar {
     background-color: var(--main);
     filter: drop-shadow(0px 3px 5px #000000);
-    padding: 20 0;
+    padding: 10 0;
+    /* padding-top: 10px; */
     border-radius: 0 0 10px 10px;
 }
 
@@ -25,22 +26,93 @@
     color: white;
 }
 
+.link {
+    border-radius: 10px;
+    background-color: var(--accent);
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    /*  */
+}
+
+.link span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.link span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.link:hover span {
+    padding-right: 1.5vw;
+}
+
+.link:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .link {
+        font-size: 2vw;
+        width: 120px;
+    }
+
+    .link:hover span {
+        padding-right: 22px;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .burger {
         display: flex;
-        justify-content: flex-end;
+        align-items: flex-end;
     }
 
     #nav-link {
-       padding-top: 15px;
-       padding-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
+
+    .link {
+        font-size: 1.75vw;
+        width: 100px;
+    }
+
+    /* .link:hover span {
+        padding-right: 15px;
+    } */
 }
+/* FIX VW HOVER SPAN */
 @media screen and (max-width: 991px) {
     #brand-name {
-    padding: 0;
+        padding: 0;
     }
-
-
 }
 
+@media screen and (max-width: 576px) {
+    #first-link {
+        margin-top: 4px;
+    }
+
+    .link {
+        width: 60px;
+    }
+
+    /* .link:hover span {
+        padding-right: 10px;
+    } */
+}

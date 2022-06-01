@@ -12,8 +12,10 @@ export default function Hero() {
                 <Avatar />
             </Col>
             <Col sm={12} lg={7}>
-                <About />
-                <Skills />
+                <section id='bio'>
+                    <About />
+                    <Skills />
+                </section>
             </Col>
         </Row>
     );

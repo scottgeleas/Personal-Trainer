@@ -4,6 +4,8 @@
     text-align: center;
     width: 25rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Can't override only the border radius without important */
+    border-radius: 10px !important; 
 }
 
 .card-title {
@@ -13,7 +15,7 @@
 
 .card-subtitle {
     font-size: 20px;
-    /* margin-top: 3px; */
+    margin-top: 3px;
 }
 
 .card-body {

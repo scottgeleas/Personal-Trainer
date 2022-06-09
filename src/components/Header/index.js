@@ -36,33 +36,6 @@ export default function Header() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
-            {/* <Navbar id="navbar" expand="lg" collapseOnSelect>
-                <Col>
-                    <Image id="logo" src={dumbbell} />
-                </Col>
-                <Col>
-                    <LinkContainer to="/">
-                        <Navbar.Brand id="brand-name">
-                            Dylan Clifford
-                        </Navbar.Brand>
-                    </LinkContainer>
-                </Col>
-                <Col>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#features">Features</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                    <Nav>
-                        <LinkContainer to="/contact" id="nav-link">
-                            <Nav.Link>Contact</Nav.Link>
-                        </LinkContainer>
-                    </Nav>
-                </Col>
-            </Navbar> */}
         </header>
     );
 }

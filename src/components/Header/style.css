@@ -57,7 +57,7 @@
 }
 
 .link:hover span {
-    padding-right: 1.5vw;
+    padding-right: 20%;
 }
 
 .link:hover span:after {
@@ -72,7 +72,7 @@
     }
 
     .link:hover span {
-        padding-right: 22px;
+        padding-right: 18%;
     }
 }
 
@@ -92,9 +92,9 @@
         width: 100px;
     }
 
-    /* .link:hover span {
-        padding-right: 15px;
-    } */
+    .link:hover span {
+        padding-right: 16%;
+    }
 }
 /* FIX VW HOVER SPAN */
 @media screen and (max-width: 991px) {
@@ -111,8 +111,4 @@
     .link {
         width: 60px;
     }
-
-    /* .link:hover span {
-        padding-right: 10px;
-    } */
 }

@@ -9,7 +9,7 @@ export default function Footer() {
         <footer>
             <Container fluid id="footer">
                 <Row>
-                    <Col xs={12}>
+                    <Col xs={12} lg={6}>
                         <Container id="contact">
                             <h3>
                                 Questions? Or want to book a{' '}
@@ -25,7 +25,7 @@ export default function Footer() {
                             </p>
                         </Container>
                     </Col>
-                    <Col id="certification">
+                    <Col id="certification" xs={12} lg={6}>
                         <img src={issa} alt="issa-certification"></img>
                     </Col>
                 </Row>

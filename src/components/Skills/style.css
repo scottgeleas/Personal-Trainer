@@ -3,8 +3,17 @@
 }
 
 
-#skill-info {
+#skill-info  {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    padding: 5px;
+    /* padding: 5px; */
 }
+
+/* #skill-info li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#skill-info li::after {
+    content: "|";
+} */

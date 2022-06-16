@@ -5,7 +5,18 @@ export default function Skills () {
     return (
         <section>
         <h2 id="skill-header">Skills</h2>
-        <p id="skill-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet nulla facilisi morbi tempus iaculis urna id. Arcu non sodales neque sodales ut etiam sit amet nisl. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum.</p>
+        <ul id="skill-info">
+            <li>Hypertrophy (Muscle Growth)</li> 
+            <li> Biomechanics </li> 
+            <li> Exercise program design </li> 
+            <li> Fat loss via increase in metabolism with hyperplasia (increase in # of muscle fibers) </li> 
+            <li> Discipline </li> 
+        
+            <li> Coaching </li> 
+            <li> Weight Management </li> 
+            <li> Nutritional Guidance </li> 
+            </ul>
+
         </section>
     )
 }

@@ -3,7 +3,7 @@ import './style.css'
 
 export default function Skills () {
     return (
-        <section>
+        <section id="skills">
         <h2 id="skill-header">Skills</h2>
         <ul id="skill-info">
             <li>Hypertrophy (Muscle Growth)</li> 

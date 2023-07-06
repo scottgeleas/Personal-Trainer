@@ -2,11 +2,12 @@
     border-radius: 50%;
 }
 
-#something {
+#avatarContainer {
     width: 750px;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 /* @media screen and (max-width: 1300 ) {

@@ -2,9 +2,10 @@ import React from "react";
 import './style.css'
 export default function About() {
     return (
-        <section>
+        <section id="about">
             <h2 id="about-header">About Me</h2>
-            <p id="about-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet nulla facilisi morbi tempus iaculis urna id. Arcu non sodales neque sodales ut etiam sit amet nisl. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Accumsan tortor posuere ac ut. Sem nulla pharetra diam sit amet nisl. Id venenatis a condimentum vitae. Eget gravida cum sociis natoque penatibus et. Ut diam quam nulla porttitor. Morbi tristique senectus et netus et malesuada. Diam ut venenatis tellus in metus vulputate eu. A erat nam at lectus urna duis convallis convallis. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Dignissim enim sit amet venenatis urna cursus eget nunc. Nisi porta lorem mollis aliquam ut porttitor leo a diam. Cursus sit amet dictum sit amet justo donec. Dictum fusce ut placerat orci nulla pellentesque dignissim. Urna nec tincidunt praesent semper feugiat.</p>
+            <p id="about-info">My name is Dylan Clifford and I am a personal trainer and owner of Alton Village Fitness.I always had an interest in fitness my whole life, but decided it was time to take the next step when I was 17. The interest in fitness quickly grew into a passion, and I was hungry to learn the ins and outs of the industry. Along the journey, earning my personal training certificate through the ISSA (International Sports Sciences Association), I had the desire to help others the way I helped myself. The ability to teach a client the exact way an exercise is intended to be performed is something I take great pride in. Biomechanics, in other words—how the body moves, is my specialty. I enjoy having clients know that they are maximizing their efforts in the gym through superior exercise selection and technique. Driving you to reach your goal is my job, whether it’s to build 15lb or muscle or lose a few pounds of bodyfat to get that beach body you’ve always wanted. I combine your goals and physical stats to formulate a completely unique and effective workout program—tailored to YOU!
+            </p>
         </section>
     )
 }

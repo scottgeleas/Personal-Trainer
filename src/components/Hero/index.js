@@ -8,10 +8,10 @@ import './style.css';
 export default function Hero() {
     return (
         <Row id='hero-container'>
-            <Col sm={12} lg={5} id='avatar-container'>
+            <Col sm={12} lg={6} xl={6} id='avatar-container'>
                 <Avatar />
             </Col>
-            <Col sm={12} lg={7}>
+            <Col sm={12} lg={6} xl={6}>
                 <section id='bio'>
                     <About />
                     <Skills />

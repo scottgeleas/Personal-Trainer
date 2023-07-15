@@ -23,16 +23,18 @@ export default function ContactForm() {
     function onSubmit() {
         //try/catch, update statust text, try send email, if success 'email sent',settimeout for 3 secs, and clear status text. Catch 'something went wrong try again', settimeout again for 3 secs
 
-    //     try {
-    //         setTimeout(() => {
-    //             if (sendEmail) {
-    //                 console.log("Email Sent!")
-    //             }
-    //         }, 3000);
-    //         document.getElementById("form").reset();
-    //     } catch (e) {
-    //         console.log(e)
-    //     }
+        // try {
+        //     setTimeout(() => {
+        //         if (sendEmail) {
+        //             console.log("Email Sent!")
+        //          setStatusText("Sending...")
+        //         }
+        //     }, 3000);
+        //      setStatusText("Sent!")
+        //     document.getElementById("form").reset();
+        // } catch (e) {
+        //     console.log(e)
+        // }
 
     }
 
@@ -44,17 +46,17 @@ export default function ContactForm() {
         <Form id="form" ref={form} onSubmit={sendEmail} >
             <Form.Group className="my-3 form-group">
                 <Form.Label>Your Name:</Form.Label>
-                <Form.Control type="text" placeholder="John Smith" />
+                <Form.Control type="text" placeholder="John Smith" name='user_name' />
             </Form.Group>
 
             <Form.Group className="my-3 form-group" controlId="formBasicEmail">
                 <Form.Label>Email address:</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Control type="email" placeholder="Enter email" name='user_email' />
             </Form.Group>
 
             <Form.Group className="my-3 form-group">
                 <Form.Label>Subject:</Form.Label>
-                <Form.Select aria-label="Default select example">
+                <Form.Select aria-label="Default select example" name='subject'>
                     <option>Select a Subject</option>
                     <option value="1">General Question</option>
                     <option value="2">Services {'&'} Pricing</option>
@@ -67,11 +69,12 @@ export default function ContactForm() {
                 controlId="exampleForm.ControlTextarea1"
             >
                 <Form.Label>Message:</Form.Label>
-                <Form.Control as="textarea" rows={3} />
+                <Form.Control as="textarea" rows={3} name='message' />
             </Form.Group>
             <div>
                 {/* <span>{statusText}</span> */}
                 <Button
+                // onClick={onSubmit}
                     id="submit"
                     className="mb-3"
                     variant="primary"

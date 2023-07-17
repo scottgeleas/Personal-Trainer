@@ -11,6 +11,13 @@
     width: 90%;
 }
 
+.actionContainer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #submit {
     border: none;
     font-size: larger;

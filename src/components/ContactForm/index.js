@@ -6,36 +6,43 @@ import './style.css';
 export default function ContactForm() {
     const form = useRef();
 
-    // const { statusText, setStatusText } = useState("")
+    const [statusText, setStatusText ] = useState("")
+    // let myState = ''
+    // function updateMyState (newState) {
+    //     myState = newState
+    // }
 
-    const sendEmail = (e) => {
+    async function sendEmail(e) {
         e.preventDefault();
-        emailjs.sendForm('service_d0eiqek', 'template_6ddebja', form.current, 'user_e3xioD9DxjxuKMVKwRYSc')
-            .then((result) => {
-                console.log(result.text);
-                form.current.reset();
-                alert("email sent!")
-            }, (error) => {
-                console.log(error.text);
-            });
+        try {
+            const result = await emailjs.sendForm('service_d0eiqek', 'template_6ddebja', form.current, 'user_e3xioD9DxjxuKMVKwRYSc')
+            console.log(result.text);
+            form.current.reset();
+        } catch(error) {
+           throw new Error('Error sending email', error)
+        } 
     };
 
-    function onSubmit() {
+    function onSubmit(e) {
         //try/catch, update statust text, try send email, if success 'email sent',settimeout for 3 secs, and clear status text. Catch 'something went wrong try again', settimeout again for 3 secs
-
-        // try {
-        //     setTimeout(() => {
-        //         if (sendEmail) {
-        //             console.log("Email Sent!")
-        //          setStatusText("Sending...")
-        //         }
-        //     }, 3000);
-        //      setStatusText("Sent!")
-        //     document.getElementById("form").reset();
-        // } catch (e) {
-        //     console.log(e)
-        // }
-
+        try {
+             // check all feilds are not empty and valid, if not throw an error
+            //throw new Error('required email blah', error)
+            setStatusText('Sending...')
+            sendEmail(e)
+            setTimeout(()=> {
+                setStatusText('Email sent!')
+            }, 5000)
+            setTimeout(()=> {
+                setStatusText('')
+            }, 10000)
+        } catch (error) {
+            setStatusText('Something went wqrong, try again.')
+            setTimeout(()=> {
+                setStatusText('')
+            }, 3000)
+            console.log(error)
+        }
     }
 
 
@@ -71,10 +78,10 @@ export default function ContactForm() {
                 <Form.Label>Message:</Form.Label>
                 <Form.Control as="textarea" rows={3} name='message' />
             </Form.Group>
-            <div>
-                {/* <span>{statusText}</span> */}
+            <div className="actionContainer">
+                <div>{statusText}</div>
                 <Button
-                // onClick={onSubmit}
+                onClick={onSubmit}
                     id="submit"
                     className="mb-3"
                     variant="primary"

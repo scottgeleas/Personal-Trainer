@@ -9,8 +9,9 @@ export default function ContactForm() {
 
     const [statusText, setStatusText] = useState("")
     const [textColor, setTextColor] = useState('black')
+    const [validated, setValidated] = useState(false);
 
-    
+
     // let myState = ''
     // function updateMyState (newState) {
     //     myState = newState
@@ -20,7 +21,7 @@ export default function ContactForm() {
     async function sendEmail(e) {
         e.preventDefault();
         try {
-            
+
             const result = await emailjs.sendForm('service_d0eiqek', 'template_6ddebja', form.current, 'user_e3xioD9DxjxuKMVKwRYSc')
             console.log(result.text);
             setTimeout(() => {
@@ -33,9 +34,19 @@ export default function ContactForm() {
         }
     };
 
-    
+
     function onSubmit(e) {
         //try/catch, update statust text, try send email, if success 'email sent',settimeout for 3 secs, and clear status text. Catch 'something went wrong try again', settimeout again for 3 secs
+        const handleSubmit = (event) => {
+            const form = event.currentTarget;
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            setValidated(true);
+        }
+
         try {
             // check all feilds are not empty and valid, if not throw an error
             //throw new Error('required email blah', error)
@@ -64,7 +75,7 @@ export default function ContactForm() {
 
 
     return (
-        <Form id="form" ref={form} onSubmit={sendEmail}  >
+        <Form id="form" ref={form} onSubmit={sendEmail} validated>
             <Form.Group className="my-3 form-group">
                 <Form.Label>Your Name:</Form.Label>
                 <Form.Control type="text" placeholder="John Smith" name='user_name' required />
@@ -75,9 +86,9 @@ export default function ContactForm() {
                 <Form.Control type="email" placeholder="Enter email" name='user_email' required/>
             </Form.Group>
 
-            <Form.Group className="my-3 form-group">
+            <Form.Group className="my-3 form-group" >
                 <Form.Label>Subject:</Form.Label>
-                <Form.Select aria-label="Default select example" name='subject'>
+                <Form.Select aria-label="Default select example" name='subject' >
                     <option>Select a Subject</option>
                     <option value="1">General Question</option>
                     <option value="2">Services {'&'} Pricing</option>
@@ -90,10 +101,10 @@ export default function ContactForm() {
                 controlId="exampleForm.ControlTextarea1"
             >
                 <Form.Label>Message:</Form.Label>
-                <Form.Control as="textarea" rows={3} name='message' />
+                <Form.Control as="textarea" rows={3} name='message' required />
             </Form.Group>
             <div className="actionContainer">
-                <div style={{ color: textColor }}>{statusText}</div>
+                <div style={{ color: textColor, paddingBottom: "15px" }}>{statusText}</div>
                 <Button
                     onClick={onSubmit}
                     id="submit"
